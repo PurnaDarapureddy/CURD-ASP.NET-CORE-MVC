@@ -1,0 +1,35 @@
+﻿@model WebApplication13.Models.EmpModel
+
+<h3>Add Employee</h3>
+
+<html>
+<body>
+    <form asp-controller="emp" asp-action="Add" method="post">
+        <table>
+            <tr>
+                <td><label asp-for="empid">Emp ID</label></td>
+                <td><input asp-for="empid" /></td>
+                <td><span asp-validation-for="empid"></span></td>
+            </tr>
+            <tr>
+                <td><label asp-for="Name">Emp Name</label></td>
+                <td><input asp-for="Name" /></td>
+                <td><span asp-validation-for="Name"></span></td>
+            </tr>
+            <tr>
+                <td><label asp-for="City">City</label></td>
+                <td><input asp-for="City" /></td>
+                <td><span asp-validation-for="City"></span></td>
+            </tr>
+            <tr>
+                <td><label asp-for="Address">Address</label></td>
+                <td><input asp-for="Address" /></td>
+                <td><span asp-validation-for="Address"></span></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Save"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
